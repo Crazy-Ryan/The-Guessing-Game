@@ -3,15 +3,21 @@
 # correct number.
 
 #number input
+
+function readnum
+{
+read guess_num
+}
+
 echo "Please guess how many files there are in the current directory"
 
-read guess_num
+readnum
 
 while [[ ! $guess_num =~ ^[0-9]+$ ]]
 do
 
 echo "Please enter a number, enter again"
-read guess_num
+readnum
 
 done
 
@@ -32,7 +38,7 @@ fi
 
 echo "Please enter again"
 
-read guess_num
+readnum
 echo "The number you guessed is $guess_num"
 
 done
