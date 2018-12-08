@@ -1,6 +1,6 @@
 #Generate readme.md
 
-echo "The name of the project is Guessing-Game\n" > readme.md
+echo "The name of the project is Guessing-Game</br>" > readme.md
 time=$(date -R)
 
 echo "The makefile is run at $time\n" >> readme.md
